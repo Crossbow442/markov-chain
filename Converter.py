@@ -10,7 +10,7 @@ text = text[:end]
 lines = text.splitlines()
 keepLines = []
 skipNext = False
-started = False   
+started = False
 
 for line in lines:
     line = line.strip()
@@ -39,12 +39,13 @@ for line in lines:
 
 text = "\n".join(keepLines)
 
-
-text = text.replace("_", "")       
-text = text.replace("—", " ")      
-text = text.replace("“", "")      
+text = text.replace("_", "")
+text = text.replace("—", " ")
+text = text.replace("“", "")
 text = text.replace("”", "")
 text = text.replace("‘", "")
-text = text.replace("’", "'")      
+text = text.replace("’", "'")
+text = text.replace(":", "")
 
 open("source.txt", "w", encoding="utf-8").write(text)
+print("Done")
