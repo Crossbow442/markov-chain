@@ -40,12 +40,16 @@ for line in lines:
 text = "\n".join(keepLines)
 
 text = text.replace("_", "")
+text = text.replace("(", "")
+text = text.replace(")", "")
 text = text.replace("—", " ")
 text = text.replace("“", "")
 text = text.replace("”", "")
 text = text.replace("‘", "")
 text = text.replace("’", "'")
 text = text.replace(":", "")
+
+text = text.lower()
 
 open("source.txt", "w", encoding="utf-8").write(text)
 print("Done")

@@ -12,7 +12,7 @@ A Markov Chain implementation in Python that generates text based on any Gutenbu
 - Then that word's succesors are chosen from randomly
 - This continues until a word has no successors, or until there are 100 words in the sentence
 
-**Double Order**
+**Double Order:**
 - Coming Soon
 
 ## How to use

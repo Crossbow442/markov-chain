@@ -1,0 +1,24 @@
+import random
+import json
+
+table = json.load(open("singleTable.json"))
+
+outputWords = []
+
+cWord = random.choice(list(table.keys()))
+outputWords.append(cWord.capitalize())
+
+
+#Adds random words to string
+for i in range(100):
+    if not len(table[cWord]) == 0:
+        cWord = random.choice(table[cWord])
+        outputWords.append(cWord)
+    else:
+        break
+
+output = " ".join(outputWords) + "."
+
+print("")
+print(output)
+print("")
