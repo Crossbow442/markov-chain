@@ -15,6 +15,6 @@ for word in words:
 
     count += 1
 
-json.dump(table, open("singleTable.json", "w"))
-
 print("Done")
+
+json.dump(table, open("singleTable.json", "w"))
