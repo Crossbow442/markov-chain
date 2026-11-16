@@ -10,7 +10,7 @@ outputWords.append(cWord.capitalize())
 
 
 #Adds random words to string
-for i in range(100):
+for i in range(10):
     if not len(table[cWord]) == 0:
         cWord = random.choice(table[cWord])
         outputWords.append(cWord)
